@@ -18,13 +18,13 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(/^spec\//)
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'activerecord', '~> 4.0'
-  gem.add_dependency 'rails-observers', '~> 0.1.2'
+  gem.add_dependency 'activerecord', '>= 4.0'
+  gem.add_dependency 'rails-observers', '>= 0.1.2'
 
   gem.add_development_dependency "protected_attributes"
   gem.add_development_dependency 'appraisal', '~> 1.0.0'
-  gem.add_development_dependency 'rails', '~> 4.2.0'
-  gem.add_development_dependency 'rspec-rails', '~> 3.0'
+  gem.add_development_dependency 'rails', ">= 4.2.0"
+  gem.add_development_dependency 'rspec-rails', '>= 3.0'
 
   # JRuby support for the test ENV
   if defined?(JRUBY_VERSION)
@@ -37,4 +37,3 @@ Gem::Specification.new do |gem|
     gem.add_development_dependency 'pg', '~> 0.18'
   end
 end
-
